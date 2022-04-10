@@ -1,4 +1,5 @@
 from fractions import Fraction
+import logger as log # импортируем модуль логирования
 
 x = 0
 y = 0
@@ -8,10 +9,8 @@ def init (a,b):
     global y
     x = Fraction(a)
     y = Fraction(b)
-# init(11,12)
 
-# print(x)
-# print(y)
 def do_it():
-    return x * y
-
+    res=x*y
+    log.log_model_mult(res) # обращаемся к модулю логирования и функции которая логирует умножение. Передаем этой функции полученный результат
+    return res
