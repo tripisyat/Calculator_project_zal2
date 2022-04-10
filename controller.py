@@ -1,5 +1,14 @@
-import model_sum as model
-import view
+import model_sum_Com as model
+import view_complex as view
+
+#import model_sum_Fr as model
+#import view_fraction as view
+
+#import model_mult_Com as model
+#import view_complex as view
+
+#import model_mult_Fr as model
+#import view_fraction as view
 
 
 def button_click():
