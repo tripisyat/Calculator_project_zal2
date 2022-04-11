@@ -11,6 +11,6 @@ def init (a,b):
     y = Fraction(b)
 
 def do_it():
-    res=x-y
+    res = x - y
     log.log_model_sub(res) # обращаемся к модулю логирования и функции которая логирует умножение. Передаем этой функции полученный результат
     return res
